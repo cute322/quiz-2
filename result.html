@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>النتيجة النهائية</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/result.css">
+    <!-- مكتبة Chart.js لرسم الدائرة النسبية -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>النتيجة النهائية</h1>
+        <p class="score-text">لقد حصلت على <span id="final-score">0</span> من <span id="total-questions">0</span></p>
+        <div class="chart-container">
+            <canvas id="result-chart"></canvas>
+        </div>
+        <p id="feedback-message"></p>
+        <a href="index.html" class="retry-btn">إعادة الكويز</a>
+    </div>
+
+    <script src="assets/js/result.js"></script>
+</body>
+</html>

@@ -1,0 +1,113 @@
+body {
+    font-family: 'Cairo', sans-serif;
+    direction: rtl;
+    text-align: right;
+    background-color: #f4f7f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    color: #333;
+}
+
+.container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+}
+
+h1 {
+    color: #4CAF50;
+    margin-bottom: 25px;
+    font-size: 2.2em;
+}
+
+.score-text {
+    font-size: 1.6em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#final-score {
+    font-weight: bold;
+    color: #4CAF50;
+}
+
+#total-questions {
+    font-weight: bold;
+    color: #555;
+}
+
+.chart-container {
+    position: relative;
+    width: 250px; /* Fixed width for the chart */
+    height: 250px; /* Fixed height for the chart */
+    margin: 30px auto; /* Center the chart */
+}
+
+#result-chart {
+    display: block; /* Ensure canvas behaves like a block element */
+}
+
+
+#feedback-message {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #388e3c;
+    margin-top: 30px;
+    margin-bottom: 35px;
+    line-height: 1.6;
+}
+
+.retry-btn {
+    background-color: #2196F3; /* Blue for retry */
+    color: white;
+    padding: 14px 30px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2em;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: inline-block; /* Allows padding and margin to work correctly */
+    margin-top: 20px;
+}
+
+.retry-btn:hover {
+    background-color: #1976D2;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+        margin: 15px;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    .score-text {
+        font-size: 1.4em;
+    }
+
+    #feedback-message {
+        font-size: 1.1em;
+    }
+
+    .retry-btn {
+        font-size: 1.1em;
+        padding: 12px 25px;
+    }
+
+    .chart-container {
+        width: 200px;
+        height: 200px;
+    }
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>كويز الثقافة العامة</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✨</text></svg>">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="start-screen">
+            <h1>اختبر ثقافتك العامة</h1>
+            <p>أدخل اسمك للمشاركة في الكويز ومعرفة نتيجتك.</p>
+            <input type="text" id="username" placeholder="الاسم الكامل" autocomplete="off">
+            <button id="start-btn">ابدأ الآن</button>
+        </div>
+
+        <div id="quiz-screen" class="hidden">
+            <div id="quiz-header">
+                <h2 id="question">نص السؤال هنا</h2>
+            </div>
+            <div id="answers-container">
+                <!-- أزرار الإجابات ستظهر هنا -->
+            </div>
+            <div id="progress-bar-container">
+                <div id="progress-bar"></div>
+            </div>
+            <p id="question-counter"></p>
+        </div>
+    </div>
+
+    <!-- مكتبات Firebase (يجب أن تكون قبل ملفات JS الخاصة بك) -->
+   <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app.js" type="module"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-firestore.js" type="module"></script>
+
+    <script src="assets/js/firebase-config.js" type="module"></script>
+    <script src="assets/js/main.js" type="module"></script>
+</body>
+</html>
