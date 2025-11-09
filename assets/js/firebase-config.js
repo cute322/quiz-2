@@ -1,7 +1,7 @@
-// Import the functions you need from the SDKs you need
-import { initializeApp } from "firebase/app";
-// Import Firestore service
-import { getFirestore } from "firebase/firestore";
+// Import the functions you need from the SDKs you need using full CDN paths
+import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-app.js";
+// Import Firestore service using full CDN path
+import { getFirestore } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-firestore.js";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {

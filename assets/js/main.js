@@ -1,7 +1,7 @@
 // Import db from firebase-config.js
 import { db } from './firebase-config.js';
-// Import Firestore functions for v9 SDK
-import { collection, addDoc, serverTimestamp } from "firebase/firestore";
+// Import Firestore functions for v9 SDK using full CDN paths
+import { collection, addDoc, serverTimestamp } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-firestore.js";
 
 document.addEventListener('DOMContentLoaded', () => {
     const startScreen = document.getElementById('start-screen');

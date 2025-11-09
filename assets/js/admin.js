@@ -1,7 +1,7 @@
 // Import db from firebase-config.js
 import { db } from './firebase-config.js';
-// Import Firestore functions for v9 SDK
-import { collection, getDocs, orderBy, query } from "firebase/firestore";
+// Import Firestore functions for v9 SDK using full CDN paths
+import { collection, getDocs, orderBy, query } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-firestore.js";
 
 document.addEventListener('DOMContentLoaded', async () => {
     const totalParticipantsElement = document.getElementById('total-participants');
